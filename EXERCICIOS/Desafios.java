@@ -14,14 +14,14 @@ public class Desafios {
     int quartoSemestre = 9;
 
     System.out.println(" *** Notas Semestrais *** ");
-    
+
     int resultadoFinal = (primeiroSemestre + segundoSemestre + terceiroSemestre + quartoSemestre) /4;
 
     if (resultadoFinal >= 7) {
-            System.out.println("Parabens você foi aprovado : "  + resultadoFinal);
+            System.out.println("Parabéns você foi aprovado : "  + resultadoFinal);
 
     } else {
-        System.out.println("Sua nota esta a baixo da media : " + resultadoFinal);
+        System.out.println("Sua nota esta a baixo da media : "  + resultadoFinal);
     }
 
     }
