@@ -3,11 +3,37 @@ import java.util.Scanner;
 public class IfeElse {
 
     public static void main(String args[]){
+        Scanner s = new Scanner (System.in);
+        System.out.println("**** VERIFICAÇÃO DA IDADE ****");
+
+
+        System.out.println("Digite qual é a sua idade: ");
+        int idade = s.nextInt();
+        String idadeSt = getIdade(idade);
+        System.out.println(idadeSt);
+
         Controle();
-        System.out.println("RESUT DA SEGUNDA VERIFICÇÃO");
+        System.out.println("**** RESUT DA SEGUNDA VERIFICÇÃO ****");
         Controle2();
 
     }
+
+
+      public static String getIdade(int idade){
+        if (idade >= 0 && idade <= 5){
+            return "Você é um bebê";
+        }else if (idade >=7 && idade <= 10){
+            return "Você é uma criança";
+        }else if (idade >= 15 && idade <= 18){
+            return "você é um adolescente";
+        }else {
+            return "Você é um adulto";
+        }
+        
+
+    }
+
+
 
     //if e else:
     public static void Controle(){
@@ -33,5 +59,8 @@ public class IfeElse {
             System.out.println("Resultado difente dos demais");
         }
     }
+
+
+   
     
 }
