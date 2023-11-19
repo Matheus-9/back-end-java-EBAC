@@ -29,31 +29,31 @@ public class Desafios {
     float result = (nota1 + nota2 + nota3 + nota4) / 4;
     String avaliado = " ";
 
-    if (result >= 80){
+    if (result >= 7){
         avaliado = "A";
 
-    } else if (result < 80 && result >= 70 ) {
+    } else if (result >= 5) {
         avaliado = "B";
 
-    }else if (result < 70 && result >=  60 ) {
+    }else if (result < 5){
         avaliado = "C";
-
-    }else if (result < 60 && result >= 0){
-        avaliado = "D";
     }
 
         switch (avaliado) {
         case "A":
-        case "B":
             System.out.println("Você foi aprovado! ");
             break;
         
+        case "B":
+            System.out.println("Recuperação");
+            break;
+
         case "C":
-        case "D":
-            System.out.println("Não aprovado. ");
-    
-        default:
-            System.out.println("Avaliação negada. ");
+            System.out.println("Aluno reprovado. ");
+            break;
+
+
+            default:
         }
 
 }
